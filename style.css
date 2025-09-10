@@ -7,50 +7,89 @@ body {
   color: #2c3e50; /* Dark blue-gray text */
   margin: 0;
   padding: 0;
+  text-align: center; /* Center all text and content */
+  /* Add a background image to make the site less plain */
+  background-image: url('https://images.unsplash.com/photo-1744843806143-42f4599e29fe?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover; /* Make the image cover the whole page */
+  background-repeat: no-repeat; /* Don't repeat the image */
+  background-position: center; /* Center the image */
 }
 
-/* Add some space around each section */
-section {
+/* All sections use the same background color with 25% opacity so the background image is visible */
+section,
+#hero, #bio, #projects, #skills, #contact {
+  background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 700px; /* Keeps content easy to read */
+  max-width: 1000px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
+  text-align: center; /* Center section content */
 }
 
-/* Hero section stands out with a muted blue color */
-#hero {
-  background-color: #b3c7e6; /* Muted blue */
-  text-align: center;
+/* Logo image styles for hero section */
+.logo {
+  display: inline-flex;      /* Logo sits next to text */
+  margin: 0 24px 0 0;         /* Space to the right of logo */
+  max-width: 250px;           /* Logo size */
+  height: auto;               /* Keep aspect ratio */
+  border-radius: 8px;         /* Soft corners */
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08); /* Gentle shadow */
+  padding: 10px;
 }
 
-/* Bio section uses a lighter blue */
-#bio {
-  background-color: #dbeafe; /* Very light blue */
+/* Navigation bar styles - logo and links side by side */
+#navbar {
+  display: flex; /* Put logo and links in a row */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center; /* Center the links horizontally */
+  background-color: #3a5a7a; /* Muted dark blue background */
+  padding: 12px 0;
+  margin-bottom: 0;
+  position: relative; /* Allows absolute positioning of logo */
+}
+#navbar .logo {
+  position: fixed; /* Keep logo in the top left corner even when scrolling */
+  top: 30px; /* 30px from the top */
+  left: 30px; /* 30px from the left */
+  margin: 0; /* Remove default margin */
+  max-width: 100px; /* Smaller logo for navbar */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 8px; /* Soft corners */
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08); /* Gentle shadow */
+  z-index: 1000; /* Make sure logo stays above other content */
 }
 
-/* Skills section with a gentle blue */
-#skills {
-  background-color: #e3eaf7; /* Soft blue */
+#navbar a {
+  color: #d4d8db; /* Light text color for contrast */
+  text-decoration: none; /* Remove underline */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 6px 12px;
+  transition: background 0.2s;
 }
-
-/* Projects section with a slightly deeper muted blue */
-#projects {
-  background-color: #c9d6e3; /* Muted blue-gray */
+#navbar a:hover {
+  background-color: #b3c7e6; /* Muted blue on hover */
+  color: #3f6183;
 }
 
 /* Project cards */
 .project {
-  background: #fff;
-  border: 1px solid #b3c7e6; /* Muted blue border */
-  border-radius: 6px;
   padding: 16px;
   margin-bottom: 12px;
 }
 
 /* Headings look confident and clear in blue */
 h1, h2, h3 {
-  color: #3a5a7a; /* Muted dark blue */
+  color: #3c5772; /* Muted dark blue */
+  font-weight: bold;
+  text-decoration: underline; /* Underline headings for emphasis */
+  font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
   margin-top: 0;
 }
 
@@ -62,27 +101,26 @@ ul li {
   margin-bottom: 6px;
 }
 
-/* Navigation bar styles */
-#navbar {
-  display: flex; /* Arrange links in a row */
-  justify-content: center; /* Center the links */
-  background-color: #3a5a7a; /* Muted dark blue background */
-  padding: 12px 0;
-  margin-bottom: 0;
+/* Skills columns: show Hard and Soft Skills side by side */
+.skills-columns {
+  display: flex; /* Put the two skill lists next to each other */
+  justify-content: center; /* Center the columns horizontally */
+  gap: 40px; /* Space between the columns */
+  margin-top: 24px; /* Space above the columns */
 }
-#navbar a {
-  color: #f4f8fb; /* Light text color for contrast */
-  text-decoration: none; /* Remove underline */
-  margin: 0 18px;
-  font-size: 1.1em;
-  font-weight: 500;
-  border-radius: 4px;
-  padding: 6px 12px;
-  transition: background 0.2s;
-}
-#navbar a:hover {
-  background-color: #b3c7e6; /* Muted blue on hover */
-  color: #2c3e50;
+.skills-list {
+  width: 180px; /* Set a simple width for each column */
+  text-align: left; /* Align text to the left inside each column */
 }
 
-/* ...add more styles as you learn! */
+/* Contact section links look like headings and show underline on hover */
+#contact a {
+  color: #3a5a7a; /* Same color as h1 heading */
+  text-decoration: none; /* No underline by default */
+  font-size: 1.2em; /* Slightly larger text for emphasis */
+  font-weight: bold; /* Make the text bold like a heading */
+  transition: text-decoration 0.2s;
+}
+#contact a:hover {
+  text-decoration: underline; /* Show underline when hovered */
+}

@@ -2,39 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>ReyMelin Web Solutions</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 <body>
-  <!-- Hero Section: This is the top part of your website -->
-  <section id="hero">
-    <!-- Your name and a short welcome message -->
-    <h1>ReyMelin WebDev Solutions</h1>
-    <p>Hello! I'm a web development student.</p>
-  </section>
-
-  <!-- Navigation Bar: Simple links to sections -->
-    <!-- Each link goes to a section on the page -->
+  <!-- Navigation Bar: Logo and links at the top -->
+  <nav id="navbar">
+    <!-- Logo image at the top left corner -->
+    <img src="Logo.png" alt="ReyMelin WebDev Solutions Logo" class="logo" />
     <a href="#bio">About</a>
     <a href="#projects">Portfolio</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- Hero Section: This is the top part of your website -->
+  <section id="hero">
+    <h1>ReyMelin Web Solutions</h1>
+    <p>Bringing a human touch to modern web development</p>
+  </section>
+
   <!-- Bio Section: Write a little about yourself -->
   <section id="bio">
     <h2>About Me</h2>
-    <p>I am learning web development and excited to build new projects!</p>
-  </section>
-
-  <!-- Skills Section: List your skills -->
-  <section id="skills">
-    <h2>My Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (beginner)</li>
-    </ul>
+    <p>I’m a student web developer with a strong background in hospitality, where I learned the importance of creating seamless, welcoming experiences. My time in the industry sharpened my problem-solving, communication, and adaptability skills, which I now bring into my approach to coding and building user-friendly websites. I’m passionate about blending technical skills with a people-first mindset—designing digital experiences that feel as intuitive and inviting as great hospitality. Always eager to learn and grow, I’m excited to contribute creative, reliable solutions to real-world projects.
   </section>
 
   <!-- Projects Section: Showcase your projects -->
@@ -48,10 +40,38 @@
     <!-- Example project ends -->
   </section>
 
+    <!-- Skills Section: Two columns for Hard and Soft Skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-columns">
+      <!-- Hard Skills column -->
+      <div class="skills-list">
+        <h3>Hard Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (beginner)</li>
+        </ul>
+      </div>
+      <!-- Soft Skills column -->
+      <div class="skills-list">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Communication</li>
+          <li>Problem Solving</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- Add a Contact section at the bottom -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>You can reach me at: <a href="mailto:your@email.com">your@email.com</a></p>
+    <!-- Each contact method has an icon (emoji) in front of the word -->
+    <p>📧 <a href="mailto:reymelin2024@gmail.com">Email</a></p>
+    <p>💼 <a href="https://linkedin.com/in/rey-melin-hermann" target="_blank">LinkedIn</a></p>
+    <p>🐙 <a href="https://github.com/reymelin" target="_blank">GitHub</a></p>
   </section>
 </body>
 </html>
