@@ -13,6 +13,7 @@ body {
   background-size: cover; /* Make the image cover the whole page */
   background-repeat: no-repeat; /* Don't repeat the image */
   background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keep the image fixed when scrolling */
 }
 
 /* All sections use the same background color with 25% opacity so the background image is visible */
