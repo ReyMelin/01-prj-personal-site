@@ -1,1 +1,88 @@
-/* Add you CSS here */
+/* style.css - Basic styles for your personal site */
+
+/* Set a nice, readable font for the whole page */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif; /* Easy to read font */
+  background-color: #f4f8fb; /* Muted blue background */
+  color: #2c3e50; /* Dark blue-gray text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some space around each section */
+section {
+  padding: 32px 16px;
+  margin: 16px auto;
+  max-width: 700px; /* Keeps content easy to read */
+  border-radius: 8px; /* Soft, inviting corners */
+  box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
+}
+
+/* Hero section stands out with a muted blue color */
+#hero {
+  background-color: #b3c7e6; /* Muted blue */
+  text-align: center;
+}
+
+/* Bio section uses a lighter blue */
+#bio {
+  background-color: #dbeafe; /* Very light blue */
+}
+
+/* Skills section with a gentle blue */
+#skills {
+  background-color: #e3eaf7; /* Soft blue */
+}
+
+/* Projects section with a slightly deeper muted blue */
+#projects {
+  background-color: #c9d6e3; /* Muted blue-gray */
+}
+
+/* Project cards */
+.project {
+  background: #fff;
+  border: 1px solid #b3c7e6; /* Muted blue border */
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+/* Headings look confident and clear in blue */
+h1, h2, h3 {
+  color: #3a5a7a; /* Muted dark blue */
+  margin-top: 0;
+}
+
+/* Add a little space between list items */
+ul {
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 6px;
+}
+
+/* Navigation bar styles */
+#navbar {
+  display: flex; /* Arrange links in a row */
+  justify-content: center; /* Center the links */
+  background-color: #3a5a7a; /* Muted dark blue background */
+  padding: 12px 0;
+  margin-bottom: 0;
+}
+#navbar a {
+  color: #f4f8fb; /* Light text color for contrast */
+  text-decoration: none; /* Remove underline */
+  margin: 0 18px;
+  font-size: 1.1em;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 6px 12px;
+  transition: background 0.2s;
+}
+#navbar a:hover {
+  background-color: #b3c7e6; /* Muted blue on hover */
+  color: #2c3e50;
+}
+
+/* ...add more styles as you learn! */
