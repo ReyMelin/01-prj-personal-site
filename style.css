@@ -16,30 +16,7 @@ body {
   background-attachment: fixed; /* Keep the image fixed when scrolling */
 }
 
-/* All sections use the same background color with 25% opacity so the background image is visible */
-section,
-#hero, #bio, #projects, #skills, #contact {
-  background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
-  padding: 32px 16px;
-  margin: 16px auto;
-  max-width: 1000px; /* Keeps content easy to read */
-  border-radius: 8px; /* Soft, inviting corners */
-  box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
-  text-align: center; /* Center section content */
-}
-
-/* Logo image styles for hero section */
-.logo {
-  display: inline-flex;      /* Logo sits next to text */
-  margin: 0 24px 0 0;         /* Space to the right of logo */
-  max-width: 250px;           /* Logo size */
-  height: auto;               /* Keep aspect ratio */
-  border-radius: 8px;         /* Soft corners */
-  box-shadow: 0 2px 8px rgba(44,62,80,0.08); /* Gentle shadow */
-  padding: 10px;
-}
-
-/* Navigation bar styles - logo and links side by side */
+/* Navigation Bar styles */
 #navbar {
   display: flex; /* Put logo and links in a row */
   align-items: flex-start; /* Align items to the top */
@@ -49,18 +26,19 @@ section,
   margin-bottom: 0;
   position: relative; /* Allows absolute positioning of logo */
 }
-#navbar .logo {
-  position: fixed; /* Keep logo in the top left corner even when scrolling */
-  top: 30px; /* 30px from the top */
-  left: 30px; /* 30px from the left */
-  margin: 0; /* Remove default margin */
-  max-width: 100px; /* Smaller logo for navbar */
-  height: auto; /* Keep aspect ratio */
-  border-radius: 8px; /* Soft corners */
+.logo {
+  /* Make the logo stay fixed in the top-left corner, 20px from top and left */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  max-width: 250px;           /* Logo size */
+  height: auto;               /* Keep aspect ratio */
+  border-radius: 8px;         /* Soft corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.08); /* Gentle shadow */
-  z-index: 1000; /* Make sure logo stays above other content */
+  padding: 10px;
+  z-index: 1000;
+  opacity: 0.5; /* Make the logo 50% opaque */
 }
-
 #navbar a {
   color: #d4d8db; /* Light text color for contrast */
   text-decoration: none; /* Remove underline */
@@ -79,30 +57,75 @@ section,
   color: #3f6183;
 }
 
-/* Project cards */
-.project {
-  padding: 16px;
-  margin-bottom: 12px;
+/* Hero Section styles */
+#hero {
+  background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
+  padding: 32px 16px;
+  margin: 16px auto;
+  max-width: 1000px; /* Keeps content easy to read */
+  border-radius: 8px; /* Soft, inviting corners */
+  box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
+  text-align: center; /* Center section content */
 }
-
-/* Headings look confident and clear in blue */
-h1, h2, h3 {
+#hero h1 {
   color: #3c5772; /* Muted dark blue */
   font-weight: bold;
   text-decoration: underline; /* Underline headings for emphasis */
   font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
   margin-top: 0;
 }
-
-/* Add a little space between list items */
-ul {
-  padding-left: 20px;
-}
-ul li {
-  margin-bottom: 6px;
+#hero p {
+  margin: 16px 0 0; /* Space above the paragraph */
+  line-height: 1.5; /* Improve readability */
 }
 
-/* Skills columns: show Hard and Soft Skills side by side */
+/* Bio Section styles */
+#bio {
+  background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
+  padding: 32px 16px;
+  margin: 16px auto;
+  max-width: 1000px; /* Keeps content easy to read */
+  border-radius: 8px; /* Soft, inviting corners */
+  box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
+  text-align: center; /* Center section content */
+}
+#bio h2 {
+  color: #3c5772; /* Muted dark blue */
+  font-weight: bold;
+  text-decoration: underline; /* Underline headings for emphasis */
+  font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
+  margin-top: 0;
+}
+#bio p {
+  margin: 16px 0 0; /* Space above the paragraph */
+  line-height: 1.5; /* Improve readability */
+}
+
+/* Projects Section styles */
+#projects {
+  background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
+  padding: 32px 16px;
+  margin: 16px auto;
+  max-width: 1000px; /* Keeps content easy to read */
+  border-radius: 8px; /* Soft, inviting corners */
+  box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
+  text-align: center; /* Center section content */
+}
+.project {
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+/* Skills Section styles */
+#skills {
+  background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
+  padding: 32px 16px;
+  margin: 16px auto;
+  max-width: 1000px; /* Keeps content easy to read */
+  border-radius: 8px; /* Soft, inviting corners */
+  box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
+  text-align: center; /* Center section content */
+}
 .skills-columns {
   display: flex; /* Put the two skill lists next to each other */
   justify-content: center; /* Center the columns horizontally */
@@ -114,7 +137,27 @@ ul li {
   text-align: left; /* Align text to the left inside each column */
 }
 
-/* Contact section links look like headings and show underline on hover */
+/* Contact Section styles */
+#contact {
+  background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
+  padding: 32px 16px;
+  margin: 16px auto;
+  max-width: 1000px; /* Keeps content easy to read */
+  border-radius: 8px; /* Soft, inviting corners */
+  box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
+  text-align: center; /* Center section content */
+}
+#contact h2 {
+  color: #3c5772; /* Muted dark blue */
+  font-weight: bold;
+  text-decoration: underline; /* Underline headings for emphasis */
+  font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
+  margin-top: 0;
+}
+#contact p {
+  margin: 16px 0 0; /* Space above the paragraph */
+  line-height: 1.5; /* Improve readability */
+}
 #contact a {
   color: #3a5a7a; /* Same color as h1 heading */
   text-decoration: none; /* No underline by default */
