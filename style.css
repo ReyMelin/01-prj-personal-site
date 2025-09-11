@@ -119,6 +119,16 @@ body {
   padding: 16px;
   margin-bottom: 12px;
 }
+/* Style project links to match heading color and underline on hover */
+.project a {
+  color: #2c3e50; /* Match section heading color */
+  text-decoration: none; /* No underline by default */
+  font-weight: bold;
+  transition: text-decoration 0.2s;
+}
+.project a:hover {
+  text-decoration: underline; /* Underline when hovered */
+}
 
 /* Skills Section styles */
 #skills {
