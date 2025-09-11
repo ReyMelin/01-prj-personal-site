@@ -34,10 +34,9 @@ body {
   max-width: 250px;           /* Logo size */
   height: auto;               /* Keep aspect ratio */
   border-radius: 8px;         /* Soft corners */
-  box-shadow: 0 2px 8px rgba(44,62,80,0.08); /* Gentle shadow */
   padding: 10px;
   z-index: 1000;
-  opacity: 0.5; /* Make the logo 50% opaque */
+  opacity: 0.75; /* Make the logo 50% opaque */
 }
 #navbar a {
   color: #d4d8db; /* Light text color for contrast */
@@ -59,12 +58,10 @@ body {
 
 /* Hero Section styles */
 #hero {
-  background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
   max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
-  box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
 }
 #hero h1 {
