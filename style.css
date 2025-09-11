@@ -31,12 +31,12 @@ body {
   position: fixed;
   top: 20px;
   left: 20px;
-  max-width: 250px;           /* Logo size */
+  max-width: 150px;           /* Logo size */
   height: auto;               /* Keep aspect ratio */
   border-radius: 8px;         /* Soft corners */
   padding: 10px;
   z-index: 1000;
-  opacity: 0.75; /* Make the logo 50% opaque */
+  opacity: 0.25; /* Make the logo 25% opaque */
 }
 #navbar a {
   color: #d4d8db; /* Light text color for contrast */
