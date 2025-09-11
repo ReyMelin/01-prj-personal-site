@@ -130,6 +130,31 @@ body {
   text-decoration: underline; /* Underline when hovered */
 }
 
+/* Project box with darker, soft-edged border */
+.project-box {
+  background: #rgba(141, 149, 161, 0.75); /* Light background for contrast */
+  border: 2px solid #2c3e50; /* Dark blue-gray border */
+  border-radius: 16px; /* Soft, rounded corners */
+  box-shadow: 0 4px 16px rgba(44,62,80,0.10); /* Soft shadow */
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+/* Make the whole project box clickable like a button */
+.project-link {
+  text-decoration: none;
+  display: block;
+}
+.project-link:hover .project-box {
+  background: #3a5a7a; /* Solid dark blue background on hover */
+  color: #d4d8db; /* White text on hover */
+  box-shadow: 0 6px 24px rgba(141, 149, 161, 0.75); /* Stronger shadow */
+}
+.project-box h3, .project-box p {
+  margin: 0 0 8px 0;
+  color: #2c3e50; /* Match paragraph text color */
+}
+
 /* Skills Section styles */
 #skills {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
