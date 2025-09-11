@@ -62,17 +62,21 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 800px; /* Keeps content easy to read */
+  max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
 }
 #hero h1 {
-  color: #3c5772; /* Muted dark blue */
+  /* Make the hero title stand out and look modern/business professional */
+  font-family: 'Proxima Nova', Arial, sans-serif;
+  color: #263747; /* Muted dark blue */
   font-weight: bold;
-  text-decoration: underline; /* Underline headings for emphasis */
-  font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
+  font-size: 2.5em; /* Larger font size for emphasis */
+  letter-spacing: 2px; /* Space out letters for a modern look */
   margin-top: 0;
+  margin-bottom: 8px;
+  text-shadow: 1px 2px 8px rgba(44,62,80,0.12); /* Subtle shadow for depth */
 }
 #hero p {
   margin: 16px 0 0; /* Space above the paragraph */
@@ -84,7 +88,7 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 800px; /* Keeps content easy to read */
+  max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
@@ -93,9 +97,9 @@ body {
 #projects h2,
 #skills h2,
 #contact h2 {
-  color: #3c5772; /* Muted dark blue */
+  color: #2c3e50; /* Dark blue-gray text */
   font-weight: bold;
-  text-decoration: underline; /* Underline headings for emphasis */
+  text-decoration: none; /* Remove underline from headings */
   font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
   margin-top: 0;
 }
@@ -109,7 +113,7 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 800px; /* Keeps content easy to read */
+  max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
@@ -124,7 +128,7 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 800px; /* Keeps content easy to read */
+  max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
@@ -154,7 +158,7 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 800px; /* Keeps content easy to read */
+  max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
