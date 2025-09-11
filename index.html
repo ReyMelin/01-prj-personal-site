@@ -6,7 +6,8 @@
   <!-- Favicon: Logo icon in browser tab -->
   <link rel="icon" type="image/png" href="Logo.png">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <!-- Font Awesome for icons (using CDN for beginners) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
   <!-- Navigation Bar: Logo and links at the top -->
@@ -49,20 +50,18 @@
       <!-- Hard Skills column -->
       <div class="skills-list">
         <h3>Hard Skills</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript (beginner)</li>
-        </ul>
+        <!-- Use divs instead of bullet points, and center text -->
+        <div class="skill-item"><i class="fab fa-html5" aria-hidden="true"></i> HTML</div>
+        <div class="skill-item"><i class="fab fa-css3-alt" aria-hidden="true"></i> CSS</div>
+        <div class="skill-item"><i class="fab fa-js" aria-hidden="true"></i> JavaScript</div>
       </div>
       <!-- Soft Skills column -->
       <div class="skills-list">
         <h3>Soft Skills</h3>
-        <ul>
-          <li>Communication</li>
-          <li>Problem Solving</li>
-          <li>Adaptability</li>
-        </ul>
+        <!-- Use divs instead of bullet points, and center text -->
+        <div class="skill-item"><i class="fas fa-comments" aria-hidden="true"></i> Communication</div>
+        <div class="skill-item"><i class="fas fa-lightbulb" aria-hidden="true"></i> Problem Solving</div>
+        <div class="skill-item"><i class="fas fa-arrows-rotate" aria-hidden="true"></i> Adaptability</div>
       </div>
     </div>
   </section>
@@ -70,10 +69,12 @@
   <!-- Add a Contact section at the bottom -->
   <section id="contact">
     <h2>Contact</h2>
-    <!-- Each contact method has an icon (emoji) in front of the word -->
-    <p>📧 <a href="mailto:reymelin2024@gmail.com">Email</a></p>
-    <p>💼 <a href="https://linkedin.com/in/rey-melin-hermann" target="_blank">LinkedIn</a></p>
-    <p>🐙 <a href="https://github.com/reymelin" target="_blank">GitHub</a></p>
+    <!-- Email contact uses Font Awesome envelope icon -->
+    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:reymelin2024@gmail.com">Email</a></p>
+    <!-- LinkedIn contact uses Font Awesome LinkedIn icon -->
+    <p><i class="fab fa-linkedin" aria-hidden="true"></i> <a href="https://linkedin.com/in/rey-melin-hermann" target="_blank">LinkedIn</a></p>
+    <!-- GitHub contact uses Font Awesome GitHub icon -->
+    <p><i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/reymelin" target="_blank">GitHub</a></p>
   </section>
 </body>
 </html>

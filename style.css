@@ -62,7 +62,7 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 1000px; /* Keeps content easy to read */
+  max-width: 800px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
@@ -84,12 +84,15 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 1000px; /* Keeps content easy to read */
+  max-width: 800px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
 }
-#bio h2 {
+#bio h2,
+#projects h2,
+#skills h2,
+#contact h2 {
   color: #3c5772; /* Muted dark blue */
   font-weight: bold;
   text-decoration: underline; /* Underline headings for emphasis */
@@ -106,7 +109,7 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 1000px; /* Keeps content easy to read */
+  max-width: 800px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
@@ -121,7 +124,7 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 1000px; /* Keeps content easy to read */
+  max-width: 800px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
@@ -134,7 +137,16 @@ body {
 }
 .skills-list {
   width: 180px; /* Set a simple width for each column */
-  text-align: left; /* Align text to the left inside each column */
+  text-align: center; /* Center text in each column */
+  margin: 0 auto;
+}
+.skill-item {
+  margin: 12px 0;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Space between icon and text */
 }
 
 /* Contact Section styles */
@@ -142,17 +154,10 @@ body {
   background-color: rgba(141, 149, 161, 0.75); /* Muted blue with 50% opacity */
   padding: 32px 16px;
   margin: 16px auto;
-  max-width: 1000px; /* Keeps content easy to read */
+  max-width: 800px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   box-shadow: 0 2px 8px rgba(44,62,80,0.04); /* Gentle blue-gray shadow */
   text-align: center; /* Center section content */
-}
-#contact h2 {
-  color: #3c5772; /* Muted dark blue */
-  font-weight: bold;
-  text-decoration: underline; /* Underline headings for emphasis */
-  font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
-  margin-top: 0;
 }
 #contact p {
   margin: 16px 0 0; /* Space above the paragraph */
