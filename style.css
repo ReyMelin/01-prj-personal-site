@@ -4,7 +4,7 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background-color: #f4f8fb;
-  color: #1a2633; /* Change font color for everything */
+  color: #13202e; /* Set all text color */
   margin: 0;
   padding: 0;
   text-align: center; /* Center all text and content */
@@ -15,6 +15,14 @@ body {
   background-position: center; /* Center the image */
   background-attachment: fixed; /* Keep the image fixed when scrolling */
   backdrop-filter: blur(4px); /* Slight blur effect for readability */
+}
+
+/* Add text-shadow to all text for readability */
+body,
+h1, h2, h3, h4, h5, h6,
+p, a, div, span, li, .skill-item {
+  color: #13202e; /* Set all text color */
+  text-shadow: 1px 2px 8px rgba(144, 160, 175, 0.849); /* Soft shadow for readability */
 }
 
 /* Navigation Bar styles */
@@ -109,70 +117,73 @@ body {
   max-width: 750px;
   border-radius: 8px;
   text-align: center;
-  color: #1a2633; /* Change font color */
-  background-color: #50545b; /* Slightly lighter grey than nav bar */
+  color: #13202e; /* Change font color */
+  background-color: #50545b5b; /* Use requested color */
 }
 #hero h1 {
   /* Make the hero title stand out and look modern/business professional */
   font-family: 'Proxima Nova', Arial, sans-serif;
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   font-weight: bold;
   font-size: 2.5em; /* Larger font size for emphasis */
   letter-spacing: 2px; /* Space out letters for a modern look */
   margin-top: 0;
   margin-bottom: 8px;
-  text-shadow: 1px 2px 8px rgba(44,62,80,0.12); /* Subtle shadow for depth */
+  text-shadow: 1px 2px 8px rgba(144, 160, 175, 0.849); /* Subtle shadow for depth */
 }
 #hero p {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   margin: 16px 0 0; /* Space above the paragraph */
   line-height: 1.5; /* Improve readability */
 }
 
 /* Bio Section styles */
 #bio {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   padding: 32px 16px;
   margin: 16px auto;
   max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   text-align: center; /* Center section content */
-  background-color: #50545b; /* Slightly lighter grey than nav bar */
+  background-color: #50545b5b; /* Use requested color */
 }
 #bio h2,
 #projects h2,
 #skills h2,
 #contact h2 {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   font-weight: bold;
   text-decoration: none; /* Remove underline from headings */
   font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
   margin-top: 0;
+  text-shadow: 1px 2px 8px rgba(144, 160, 175, 0.849);
 }
 #bio p {
-  color: #1a2633; /* Change font color */
+  color: #031425; /* Change font color */
+  text-shadow: 1px #d4d8db;
   margin: 16px 0 0; /* Space above the paragraph */
   line-height: 1.5; /* Improve readability */
 }
 
 /* Projects Section styles */
 #projects {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   padding: 32px 16px;
   margin: 16px auto;
   max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   text-align: center; /* Center section content */
-  background-color: #50545b; /* Slightly lighter grey than nav bar */
+  background-color: #50545b5b; /* Use requested color */
 }
 .project {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   padding: 16px;
   margin-bottom: 12px;
+  background-color: #50545b5b;
 }
 /* Style project links to match heading color and underline on hover */
 .project a {
-  color: #1a2633; /* Change font color */
+  color:  #13202e; /* Change font color */
   text-decoration: none; /* No underline by default */
   font-weight: bold;
   transition: text-decoration 0.2s;
@@ -188,12 +199,15 @@ body {
   border-radius: 16px; /* Soft, rounded corners */
   box-shadow: 0 4px 16px rgba(44,62,80,0.10); /* Soft shadow */
   padding: 20px;
+  color: 
   margin-bottom: 20px;
   transition: background 0.2s, box-shadow 0.2s;
 }
 /* Make the whole project box clickable like a button */
 .project-link {
   text-decoration: none;
+  background-color: #13202e;
+  border-radius: 16px;
   display: block;
 }
 .project-link:hover .project-box {
@@ -208,20 +222,20 @@ body {
 }
 
 .project-box h3, .project-box p {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   margin: 0 0 8px 0;
   color: #2c3e50; /* Match paragraph text color */
 }
 
 /* Skills Section styles */
 #skills {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   padding: 32px 16px;
   margin: 16px auto;
   max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   text-align: center; /* Center section content */
-  background-color: #50545b; /* Slightly lighter grey than nav bar */
+  background-color: #50545b5b; /* Use requested color */
 }
 .skills-columns {
   display: flex; /* Put the two skill lists next to each other */
@@ -233,7 +247,7 @@ body {
   width: 180px; /* Set a simple width for each column */
   text-align: center; /* Center text in each column */
   margin: 0 auto;
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
 }
 .skill-item {
   margin: 12px 0;
@@ -242,26 +256,26 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px; /* Space between icon and text */
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
 }
 
 /* Contact Section styles */
 #contact {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   padding: 32px 16px;
   margin: 16px auto;
   max-width: 750px; /* Keeps content easy to read */
   border-radius: 8px; /* Soft, inviting corners */
   text-align: center; /* Center section content */
-  background-color: #50545b; /* Slightly lighter grey than nav bar */
+  background-color: #50545b5b; /* Use requested color */
 }
 #contact p {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   margin: 16px 0 0; /* Space above the paragraph */
   line-height: 1.5; /* Improve readability */
 }
 #contact a {
-  color: #1a2633; /* Change font color */
+  color: #13202e; /* Change font color */
   text-decoration: none; /* No underline by default */
   font-size: 1.2em; /* Slightly larger text for emphasis */
   font-weight: bold; /* Make the text bold like a heading */
@@ -269,4 +283,13 @@ body {
 }
 #contact a:hover {
   text-decoration: underline; /* Show underline when hovered */
+}
+
+section {
+  background-color: #50545b5b; /* Use requested color */
+  box-shadow: 0 4px 16px rgba(44,62,80,0.10); /* Soft shadow for depth */
+  border-radius: 8px; /* Soft, inviting corners */
+  margin: 16px auto; /* Space between sections */
+  padding: 24px; /* Consistent padding */
+  max-width: 750px; /* Consistent max width */  
 }
